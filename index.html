@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp Resources</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R10FSL09E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4R10FSL09E');
+    </script>
+    
     <link rel="stylesheet" href="assets/css/fonts.css">
     <style>
         * {
@@ -19,7 +29,7 @@
             line-height: 1.6;
             min-height: 100vh;
             overflow-x: hidden;
-            padding-bottom: 120px; /* Space for fixed footer */
+            padding-bottom: 120px;
         }
 
         .site-main {
@@ -42,7 +52,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Header Text Styles */
         .title {
             text-transform: uppercase;
             color: #CC5C77;
@@ -85,7 +94,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* Links Styles */
         .resource-links {
             display: flex;
             flex-direction: column;
@@ -105,7 +113,6 @@
             text-decoration: underline;
         }
 
-        /* Navigation Buttons */
         .nav-buttons {
             display: flex;
             flex-wrap: wrap;
@@ -141,7 +148,6 @@
             border: solid 1px #D68383;
         }
 
-        /* Fixed Footer */
         footer {
             position: fixed;
             bottom: 0;
@@ -180,79 +186,79 @@
 <body>
     <div class="site-main">
         
-        <!-- HOME SECTION -->
         <section id="back-section" class="active">
             <img src="assets/images/image01.png.png" alt="Bootcamp Resources" style="display:block; margin: 0 auto 1.5rem auto; max-width: 100%; height: auto;">
             <h1 class="title">Bootcamp RESOURCES</h1>
             <p class="subtitle">Struggling with learning? Here are some resources you can learn with! 🤓☝️</p>
-            <p class="contact">To add more resources contact <u>Varnikaa Muthuswamy</u> on teams :)</p>
+            <p class="contact" style="color: inherit;">
+                To add more resources 
+                <a href="https://forms.office.com/r/2xy33gi43t?origin=lprLink"
+                   target="_blank"
+                   style="color: inherit; text-decoration: underline;">
+                   click here
+                </a>:)
+            </p>
         </section>
 
-        <!-- PYTHON/SQL SECTION -->
         <section id="work-section">
             <p class="section-title">🐍 Python/SQL 🐍</p>
             
             <div class="resource-links">
-                <a href="https://datalemur.com/" target="_blank">🐵 Data Lemur (Easy - Hard fun sql/python problems)</a>
-                <a href="https://www.learnpython.org/" target="_blank">✏️ learnpython (python beginner level problems)</a>
-                <a href="https://zetcode.com/" target="_blank">📚 zetcode (Python &c# problems + learning material)</a>
-                <a href="https://exercism.org/" target="_blank">🧠 exercism (free resources and problems for 75 different languages)</a>
-                <a href="https://www.hackerrank.com/" target="_blank">💡 Hackerrank (Python, sql, etc questions)</a>
-                <a href="https://www.lintcode.com/" target="_blank">🛠️ lintcode (python/sql problems)</a>
-                <a href="https://www.codewars.com/" target="_blank">⚔️ codewars (a competitieve platform for coding)</a>
-                <a href="https://cscircles.cemc.uwaterloo.ca/using-this-website/" target="_blank">👩 cscircles (python problems + materials for beginners by the university of Waterloo)</a>
-                <a href="https://stackoverflow.com/questions" target="_blank">🗂️ Stack Overflow (Programmers Q & A forum)</a>
-                <a href="https://www.geeksforgeeks.org/" target="_blank">🟩 GeeksforGeeks (online learning resource for python/java/c/etc)</a>
-                <a href="https://peps.python.org/pep-0008/" target="_blank">📜 PEP 8 (python coding conventions)</a>
+                <a href="https://datalemur.com/" target="_blank" data-category="Python/SQL" data-resource="Data Lemur">🐵 Data Lemur (Easy - Hard fun sql/python problems)</a>
+                <a href="https://www.learnpython.org/" target="_blank" data-category="Python/SQL" data-resource="learnpython">✏️ learnpython (python beginner level problems)</a>
+                <a href="https://zetcode.com/" target="_blank" data-category="Python/SQL" data-resource="zetcode">📚 zetcode (Python &c# problems + learning material)</a>
+                <a href="https://exercism.org/" target="_blank" data-category="Python/SQL" data-resource="exercism">🧠 exercism (free resources and problems for 75 different languages)</a>
+                <a href="https://www.hackerrank.com/" target="_blank" data-category="Python/SQL" data-resource="Hackerrank">💡 Hackerrank (Python, sql, etc questions)</a>
+                <a href="https://www.lintcode.com/" target="_blank" data-category="Python/SQL" data-resource="lintcode">🛠️ lintcode (python/sql problems)</a>
+                <a href="https://www.codewars.com/" target="_blank" data-category="Python/SQL" data-resource="codewars">⚔️ codewars (a competitieve platform for coding)</a>
+                <a href="https://cscircles.cemc.uwaterloo.ca/using-this-website/" target="_blank" data-category="Python/SQL" data-resource="cscircles">👩 cscircles (python problems + materials for beginners by the university of Waterloo)</a>
+                <a href="https://stackoverflow.com/questions" target="_blank" data-category="Python/SQL" data-resource="Stack Overflow">🗂️ Stack Overflow (Programmers Q & A forum)</a>
+                <a href="https://www.geeksforgeeks.org/" target="_blank" data-category="Python/SQL" data-resource="GeeksforGeeks">🟩 GeeksforGeeks (online learning resource for python/java/c/etc)</a>
+                <a href="https://peps.python.org/pep-0008/" target="_blank" data-category="Python/SQL" data-resource="PEP 8">📜 PEP 8 (python coding conventions)</a>
             </div>
         </section>
 
-        <!-- DATA PROCESSING SECTION -->
         <section id="about-section">
             <p class="section-title">🧮 Data Processing/Visualization 🧮</p>
             
             <div class="resource-links">
-                <a href="https://www.youtube.com/@afaqueahmad7117/playlists" target="_blank">🎥 Afaque Ahmed (Datalakes, Apache spark youtube channel)</a>
-                <a href="https://roadmap.sh/frontend" target="_blank">🎓 roadmap (Roadmaps and resources for Data engineering/AI/Front-end/etc)</a>
-                <a href="https://www.stratascratch.com/" target="_blank">🐱 StrataScratch (Data science coding platform)</a>
+                <a href="https://www.youtube.com/@afaqueahmad7117/playlists" target="_blank" data-category="Data Processing" data-resource="Afaque Ahmed">🎥 Afaque Ahmed (Datalakes, Apache spark youtube channel)</a>
+                <a href="https://roadmap.sh/frontend" target="_blank" data-category="Data Processing" data-resource="roadmap">🎓 roadmap (Roadmaps and resources for Data engineering/AI/Front-end/etc)</a>
+                <a href="https://www.stratascratch.com/" target="_blank" data-category="Data Processing" data-resource="StrataScratch">🐱 StrataScratch (Data science coding platform)</a>
             </div>
         </section>
 
-        <!-- FRONT-END SECTION -->
         <section id="contact-section">
             <p class="section-title">🎨 Front-end 🎨</p>
             
             <div class="resource-links">
-                <a href="https://app.codility.com/programmers/" target="_blank">⚡ codility (javascript problems)</a>
-                <a href="https://www.lintcode.com/" target="_blank">🧩 lintcode (Java/c problems)</a>
+                <a href="https://app.codility.com/programmers/" target="_blank" data-category="Front-end" data-resource="codility">⚡ codility (javascript problems)</a>
+                <a href="https://www.lintcode.com/" target="_blank" data-category="Front-end" data-resource="lintcode">🧩 lintcode (Java/c problems)</a>
             </div>
         </section>
 
-        <!-- AI/ML SECTION -->
         <section id="contac-section">
             <p class="section-title">🤖 AI/ML 🤖</p>
             
             <div class="resource-links">
-                <a href="https://projectlearn.io" target="_blank">🔧 projectlearn (Machine Learning)</a>
-                <a href="https://www.tutorialspoint.com/" target="_blank">📐 Tutorials Point (free tutorials for about anything)</a>
+                <a href="https://projectlearn.io" target="_blank" data-category="AI/ML" data-resource="projectlearn">🔧 projectlearn (Machine Learning)</a>
+                <a href="https://www.tutorialspoint.com/" target="_blank" data-category="AI/ML" data-resource="Tutorials Point">📐 Tutorials Point (free tutorials for about anything)</a>
             </div>
         </section>
 
-        <!-- GAMIFIED LEARNING SECTION -->
         <section id="gamified-section">
             <p class="section-title">🎮 Gamified Learning 🎮</p>
             
             <div class="resource-links">
-                <a href="https://codecombat.com/" target="_blank">⚔️ Codingame (Real-time strategy where you program your units in JavaScript/Python)</a>
-                <a href="https://codepip.com/" target="_blank">🕹️ Codepip (JS games like Console Caper, Disarray)</a>
-                <a href="https://codecombat.com/" target="_blank">🐉 CodeCombat (Python or JavaScript programming through RPG adventures)</a>
-                <a href="https://vim-adventures.com/" target="_blank">🧭 Vim Adventures (Explore a Zelda-like world where you use Vim commands to move and solve puzzles)</a>
+                <a href="https://codecombat.com/" target="_blank" data-category="Gamified" data-resource="Codingame">⚔️ Codingame (Real-time strategy where you program your units in JavaScript/Python)</a>
+                <a href="https://codepip.com/" target="_blank" data-category="Gamified" data-resource="Codepip">🕹️ Codepip (JS games like Console Caper, Disarray)</a>
+                <a href="https://codecombat.com/" target="_blank" data-category="Gamified" data-resource="CodeCombat">🐉 CodeCombat (Python or JavaScript programming through RPG adventures)</a>
+                <a href="https://vim-adventures.com/" target="_blank" data-category="Gamified" data-resource="Vim Adventures">🧭 Vim Adventures (Explore a Zelda-like world where you use Vim commands to move and solve puzzles)</a>
             </div>
         </section>
 
     </div>
 
-    <!-- FIXED FOOTER NAVIGATION -->
     <footer>
         <div class="nav-buttons">
             <a href="#back" class="home-button">HOME</a>
@@ -265,38 +271,78 @@
     </footer>
 
     <script>
+        // Track session start time
+        let sessionStartTime = Date.now();
+        
         // Navigation System
         function showSection(hash) {
-            // Hide all sections
             document.querySelectorAll('section').forEach(section => {
                 section.classList.remove('active');
             });
 
-            // Determine which section to show
             let sectionId = 'back-section';
+            let sectionName = 'Home';
+            
             if (hash && hash !== '#back' && hash !== '#') {
                 sectionId = hash.substring(1) + '-section';
+                sectionName = hash.substring(1);
             }
 
-            // Show the target section
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.add('active');
                 window.scrollTo(0, 0);
+                
+                // Track section view
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'page_view', {
+                        page_title: sectionName,
+                        page_location: window.location.href,
+                        page_path: hash || '#back'
+                    });
+                }
             }
         }
 
-        // Handle hash changes
+        // Track external link clicks
+        document.addEventListener('click', function(e) {
+            const link = e.target.closest('a[href^="http"]');
+            if (link && typeof gtag !== 'undefined') {
+                const category = link.getAttribute('data-category') || 'Unknown';
+                const resource = link.getAttribute('data-resource') || link.href;
+                
+                gtag('event', 'click', {
+                    event_category: 'Resource Click',
+                    event_label: resource,
+                    resource_category: category,
+                    link_url: link.href
+                });
+            }
+        });
+
+        // Track time on site before leaving
+        window.addEventListener('beforeunload', function() {
+            if (typeof gtag !== 'undefined') {
+                const timeSpent = Math.round((Date.now() - sessionStartTime) / 1000);
+                gtag('event', 'session_duration', {
+                    event_category: 'Engagement',
+                    event_label: 'Time on Site',
+                    value: timeSpent
+                });
+            }
+        });
+
+        // Hash change handler
         window.addEventListener('hashchange', () => {
             showSection(window.location.hash);
         });
 
-        // Handle initial load
+        // Initial load
         window.addEventListener('load', () => {
             showSection(window.location.hash || '#back');
         });
 
-        // Handle navigation clicks
+        // Navigation clicks
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', (e) => {
                 const hash = link.getAttribute('href');
